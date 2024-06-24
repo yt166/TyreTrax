@@ -1,0 +1,5 @@
+
+n	java:S116"RRename this field "user_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ž¡Ü8Ú™€±„2
+p	java:S116"TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÚªÇ8Û™€±„2
+t	java:S116"SRename this field "job_role" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æŸ£Žùÿÿÿÿ8Û™€±„2
+u	java:S116"ZRename this field "last_login_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü–†w8Û™€±„2
