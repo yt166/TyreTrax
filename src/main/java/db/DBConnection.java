@@ -12,11 +12,11 @@ public class DBConnection {
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/tyretrax","root","yt2001");
     }
 
-    public static DBConnection GetInstance() throws SQLException, ClassNotFoundException {
+    public static DBConnection getInstance() throws SQLException, ClassNotFoundException {
         return dbConnection != null ? dbConnection:(dbConnection=new DBConnection());
     }
 
-    public Connection GetConnection(){
+    public Connection getConnection(){
         return connection;
     }
 }

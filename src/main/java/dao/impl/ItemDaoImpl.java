@@ -13,9 +13,9 @@ import java.util.List;
 public class ItemDaoImpl implements ItemDao {
 
     @Override
-    public boolean SaveItem(Item item) throws SQLException, ClassNotFoundException {
+    public boolean saveItem(Item item) throws SQLException, ClassNotFoundException {
         String sql = "INSERT INTO Item VALUES (?,?,?,?,?,?,?)";
-        PreparedStatement preparedStatement= DBConnection.GetInstance().GetConnection().prepareStatement(sql);
+        PreparedStatement preparedStatement= DBConnection.getInstance().getConnection().prepareStatement(sql);
 
         preparedStatement.setString(1, item.getItem_code());
         preparedStatement.setString(2, item.getName());
@@ -29,9 +29,9 @@ public class ItemDaoImpl implements ItemDao {
     }
 
     @Override
-    public boolean UpdateItem(Item item) throws SQLException, ClassNotFoundException {
+    public boolean updateItem(Item item) throws SQLException, ClassNotFoundException {
         String sql = "UPDATE Customer SET name=?, category=?, company=?, qty=?, exp_date=?, selling_unit_price=? WHERE item_code=?";
-        PreparedStatement preparedStatement= DBConnection.GetInstance().GetConnection().prepareStatement(sql);
+        PreparedStatement preparedStatement= DBConnection.getInstance().getConnection().prepareStatement(sql);
 
         preparedStatement.setString(1, item.getName());
         preparedStatement.setString(2, item.getCategory());
@@ -45,9 +45,9 @@ public class ItemDaoImpl implements ItemDao {
     }
 
     @Override
-    public boolean DeleteItem(String id) throws SQLException, ClassNotFoundException {
+    public boolean deleteItem(String id) throws SQLException, ClassNotFoundException {
         String sql = "DELETE FROM Customer WHERE item_code=?";
-        PreparedStatement preparedStatement = DBConnection.GetInstance().GetConnection().prepareStatement(sql);
+        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
 
         preparedStatement.setString(1,id);
         return preparedStatement.executeUpdate()>0;

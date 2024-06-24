@@ -5,8 +5,8 @@ import dto.CustomerDto;
 import java.util.List;
 
 public interface StockDao {
-    boolean SaveStock();
-    boolean UpdateStock();
-    boolean DeleteStock();
+    boolean saveStock();
+    boolean updateStock();
+    boolean deleteStock();
     List<CustomerDto> allStock();
 }

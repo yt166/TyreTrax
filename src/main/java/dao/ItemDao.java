@@ -8,8 +8,8 @@ import java.util.List;
 
 public interface ItemDao {
 
-    boolean SaveItem(Item item) throws SQLException, ClassNotFoundException;
-    boolean UpdateItem(Item item) throws SQLException, ClassNotFoundException;
-    boolean DeleteItem(String id) throws SQLException, ClassNotFoundException;
+    boolean saveItem(Item item) throws SQLException, ClassNotFoundException;
+    boolean updateItem(Item item) throws SQLException, ClassNotFoundException;
+    boolean deleteItem(String id) throws SQLException, ClassNotFoundException;
     List<CustomerDto> allItem();
 }

@@ -11,9 +11,9 @@ import java.util.List;
 
 public class CustomerDaoImpl implements CustomerDao {
     @Override
-    public boolean SaveCustomer(Customer customer) throws SQLException, ClassNotFoundException {
+    public boolean saveCustomer(Customer customer) throws SQLException, ClassNotFoundException {
         String sql ="INSERT INTO Customer VALUES (?,?,?,?,?,?,?,?)";
-        PreparedStatement preparedStatement = DBConnection.GetInstance().GetConnection().prepareStatement(sql);
+        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
 
         preparedStatement.setString(1, customer.getCustomer_id());
         preparedStatement.setString(2, customer.getName());
@@ -28,9 +28,9 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public boolean UpdateCustomer(Customer customer) throws SQLException, ClassNotFoundException {
+    public boolean updateCustomer(Customer customer) throws SQLException, ClassNotFoundException {
         String sql ="UPDATE Customer SET name=? , contact = ?, email = ?, address = ?, type = ?, credit_limit = ?, credit_period = ? WHERE customer_id=?";
-        PreparedStatement preparedStatement = DBConnection.GetInstance().GetConnection().prepareStatement(sql);
+        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
 
         preparedStatement.setString(1, customer.getName());
         preparedStatement.setString(2, customer.getContact());
@@ -45,9 +45,9 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public boolean DeleteCustomer(String id) throws SQLException, ClassNotFoundException {
+    public boolean deleteCustomer(String id) throws SQLException, ClassNotFoundException {
         String sql ="DELETE FROM Customer WHERE id=?";
-        PreparedStatement preparedStatement = DBConnection.GetInstance().GetConnection().prepareStatement(sql);
+        PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
 
         preparedStatement.setString(1,id);
 

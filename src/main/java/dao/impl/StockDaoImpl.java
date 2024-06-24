@@ -7,17 +7,17 @@ import java.util.List;
 
 public class StockDaoImpl implements StockDao {
     @Override
-    public boolean SaveStock() {
+    public boolean saveStock() {
         return false;
     }
 
     @Override
-    public boolean UpdateStock() {
+    public boolean updateStock() {
         return false;
     }
 
     @Override
-    public boolean DeleteStock() {
+    public boolean deleteStock() {
         return false;
     }
 
