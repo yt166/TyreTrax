@@ -1,6 +1,6 @@
-package dao.impl;
+package dao.custom.impl;
 
-import dao.StockDao;
+import dao.custom.StockDao;
 import dto.CustomerDto;
 
 import java.util.List;

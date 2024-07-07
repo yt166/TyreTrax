@@ -1,4 +1,4 @@
-package dao;
+package dao.custom;
 
 import dto.CustomerDto;
 import entity.Item;
@@ -11,5 +11,5 @@ public interface ItemDao {
     boolean saveItem(Item item) throws SQLException, ClassNotFoundException;
     boolean updateItem(Item item) throws SQLException, ClassNotFoundException;
     boolean deleteItem(String id) throws SQLException, ClassNotFoundException;
-    List<CustomerDto> allItem();
+    List<Item> allItem();
 }

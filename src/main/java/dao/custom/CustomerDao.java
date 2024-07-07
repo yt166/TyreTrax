@@ -1,4 +1,4 @@
-package dao;
+package dao.custom;
 
 import dto.CustomerDto;
 import entity.Customer;
@@ -11,6 +11,6 @@ public interface CustomerDao {
     boolean saveCustomer(Customer customer) throws SQLException, ClassNotFoundException;
     boolean updateCustomer(Customer customer) throws SQLException, ClassNotFoundException;
     boolean deleteCustomer(String id) throws SQLException, ClassNotFoundException;
-    List<CustomerDto> allCustomers(Customer customer);
+    List<Customer> allCustomers();
 
 }

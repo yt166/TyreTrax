@@ -1,6 +1,6 @@
-package dao.impl;
+package dao.custom.impl;
 
-import dao.ItemDao;
+import dao.custom.ItemDao;
 import db.DBConnection;
 import dto.CustomerDto;
 import entity.Item;
@@ -54,7 +54,7 @@ public class ItemDaoImpl implements ItemDao {
     }
 
     @Override
-    public List<CustomerDto> allItem() {
+    public List<Item> allItem() {
         return null;
     }
 }

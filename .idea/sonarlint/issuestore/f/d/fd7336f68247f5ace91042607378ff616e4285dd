@@ -5,5 +5,3 @@ java:S1121".Extract the assignment out of this expression.(¬›’°úÿÿÿÿ
 java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(® ©ş
 Q
 java:S6437"6Revoke and change this password, as it is compromised.(şò§øÿÿÿÿ
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íËí¢ÿÿÿÿÿ
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÃŞÏûÿÿÿÿ

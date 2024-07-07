@@ -1,6 +1,6 @@
-package dao.impl;
+package dao.custom.impl;
 
-import dao.SystemUserDao;
+import dao.custom.SystemUserDao;
 import db.DBConnection;
 import dto.CustomerDto;
 import entity.SystemUsers;

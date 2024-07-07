@@ -1,6 +1,6 @@
-package dao.impl;
+package dao.custom.impl;
 
-import dao.CustomerDao;
+import dao.custom.CustomerDao;
 import db.DBConnection;
 import dto.CustomerDto;
 import entity.Customer;
@@ -55,7 +55,7 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public List<CustomerDto> allCustomers(Customer customer) {
+    public List<Customer> allCustomers() {
         return null;
     }
 
