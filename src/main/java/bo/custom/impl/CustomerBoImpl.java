@@ -17,28 +17,28 @@ public class CustomerBoImpl implements CustomerBo {
     @Override
     public boolean saveCustomer(CustomerDto dto) throws SQLException, ClassNotFoundException {
         return customerDao.saveCustomer(new Customer(
-                dto.getCustomer_id(),
+                dto.getCustomerId(),
                 dto.getName(),
                 dto.getContact(),
                 dto.getEmail(),
                 dto.getAddress(),
                 dto.getType(),
-                dto.getCredit_limit(),
-                dto.getCredit_period()
+                dto.getCreditLimit(),
+                dto.getCreditPeriod()
         ));
     }
 
     @Override
     public boolean updateCustomer(CustomerDto dto) throws SQLException, ClassNotFoundException {
         return customerDao.saveCustomer(new Customer(
-                dto.getCustomer_id(),
+                dto.getCustomerId(),
                 dto.getName(),
                 dto.getContact(),
                 dto.getEmail(),
                 dto.getAddress(),
                 dto.getType(),
-                dto.getCredit_limit(),
-                dto.getCredit_period()
+                dto.getCreditLimit(),
+                dto.getCreditPeriod()
         ));
     }
 
@@ -54,14 +54,14 @@ public class CustomerBoImpl implements CustomerBo {
         for (Customer customer: entityList
         ) {
             dtoList.add(new CustomerDto(
-                    customer.getCustomer_id(),
+                    customer.getCustomerId(),
                     customer.getName(),
                     customer.getContact(),
                     customer.getEmail(),
                     customer.getAddress(),
                     customer.getType(),
-                    customer.getCredit_limit(),
-                    customer.getCredit_period()
+                    customer.getCreditLimit(),
+                    customer.getCreditPeriod()
             ));
         }
         return dtoList;

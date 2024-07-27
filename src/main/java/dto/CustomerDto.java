@@ -10,12 +10,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CustomerDto {
-    private String customer_id;
-    private String name;
-    private String contact;
-    private String email;
-    private String address;
-    private String type;
-    private double credit_limit;
-    private String credit_period;
+    private String CustomerId ;
+    private String Name ;
+    private String Contact ;
+    private String Email ;
+    private String Address ;
+    private String Type ;
+    private double CreditLimit ;
+    private String CreditPeriod ;
 }
