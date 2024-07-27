@@ -11,11 +11,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ItemDto {
-    private String item_code;
-    private String name;
-    private  String category;
-    private String company;
-    private int qty;
-    private Date exp_date;
-    private double selling_unit_price;
+    private String ItemCode ;
+    private String Name ;
+    private  String Category ;
+    private String Company ;
+    private int Qty ;
+    private Date ExpiredDate ;
+    private double SellingUnitPrice ;
 }
