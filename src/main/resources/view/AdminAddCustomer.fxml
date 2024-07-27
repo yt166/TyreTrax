@@ -32,7 +32,18 @@
       <JFXTextField layoutX="26.0" layoutY="89.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="First Name    : ">
          <font>
             <Font name="System Bold" size="13.0" />
-         </font></JFXTextField>
+         </font></JFXTextField><?xml version="1.0" encoding="UTF-8"?>
+
+      <?import javafx.scene.control.TextField?>
+      <?import javafx.scene.text.Font?>
+
+
+      <TextField alignment="CENTER" layoutX="178.0" layoutY="26.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: rgba(41, 77, 79, 1.0); -fx-border-color: white; -fx-text-fill: rgba(105, 237, 255, 1.0);" text="Create an Employee account" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </TextField>
+
       <JFXTextField layoutX="26.0" layoutY="134.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Adress           : ">
          <font>
             <Font name="System Bold" size="13.0" />
