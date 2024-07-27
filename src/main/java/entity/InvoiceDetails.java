@@ -11,10 +11,8 @@ import lombok.ToString;
 @ToString
 public class InvoiceDetails {
     private int seq;
-    private int invoId;
-    private String itemId;
-    private int qty;
-    private double itemPrice;
-    private String invoiceMaster;
-    private String itemCode;
+    private int InvoId ;
+    private String ItemId ;
+    private int QTY ;
+    private double ItemPrice ;
 }

@@ -11,11 +11,11 @@ import java.util.Date;
 @Data
 @ToString
 public class InvoiceMaster {
-    private String invoNumber;
-    private  String customerName;
-    private Date invoDate;
-    private String invoComment;
-    private double grossAmount;
-    private int vat;
-    private double netAmount;
+    private String InvoNumber;
+    private  String CustomerName;
+    private Date InvoDate;
+    private String InvoComment;
+    private double GrossAmount;
+    private int Vat;
+    private double NETAmount;
 }
