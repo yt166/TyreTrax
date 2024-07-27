@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="purchaseOrder" prefHeight="525.0" prefWidth="771.0" style="-fx-background-color: rgba(41, 77, 79, 1.0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PurchaseOrderController">
+   <children>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: Black;" text="Back" textFill="WHITE" />
+      <Button fx:id="btnExit" layoutX="728.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnExitOnAction" style="-fx-background-color: black;" text="X" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="193.0" layoutY="74.0" prefHeight="53.0" prefWidth="447.0" style="-fx-background-color: white;" text="Purchase Order">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCompany" layoutX="21.0" layoutY="177.0" prefHeight="31.0" prefWidth="178.0" promptText="Company" />
+      <ComboBox fx:id="cmb_Name" layoutX="213.0" layoutY="177.0" prefHeight="31.0" prefWidth="184.0" promptText="Names" />
+      <ComboBox fx:id="cmb_Category" layoutX="409.0" layoutY="177.0" prefHeight="31.0" prefWidth="178.0" promptText="Category" />
+      <TextField fx:id="txtQty" layoutX="608.0" layoutY="177.0" prefHeight="31.0" prefWidth="149.0" text="QTY" />
+      <TableView layoutX="21.0" layoutY="247.0" prefHeight="247.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="itemCode" prefWidth="114.0" text="Item Code" />
+          <TableColumn fx:id="Unit_Price" prefWidth="130.0" text="Unit Price" />
+            <TableColumn fx:id="qty" prefWidth="77.0" text="QTY" />
+            <TableColumn fx:id="netAmount" prefWidth="160.0" text="Net Amount" />
+            <TableColumn fx:id="Tax" prefWidth="93.0" text="Tax" />
+            <TableColumn fx:id="grossAmount" prefWidth="160.0" text="Gross Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
