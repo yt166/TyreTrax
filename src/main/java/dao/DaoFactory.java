@@ -2,9 +2,7 @@ package dao;
 
 import bo.custom.impl.ItemBoImpl;
 import dao.custom.CustomerDao;
-import dao.custom.impl.CustomerDaoImpl;
-import dao.custom.impl.StockDaoImpl;
-import dao.custom.impl.SystemUserDaoImpl;
+import dao.custom.impl.*;
 import dao.util.DaoType;
 
 public class DaoFactory {
@@ -19,6 +17,8 @@ public class DaoFactory {
             case ITEM: return (T) new ItemBoImpl();
             case STOCK: return (T) new StockDaoImpl();
             case SYSTEM_USER: return (T) new SystemUserDaoImpl();
+            case INVOICEDETAILS: return (T) new INVOICEDETAILSDaoImpl();
+            case INVOICEMASTER : return (T) new INVOICEMasterDaoImpl();
         }
         return null;
     }
