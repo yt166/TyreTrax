@@ -17,13 +17,13 @@ public class ItemDaoImpl implements ItemDao {
         String sql = "INSERT INTO Item VALUES (?,?,?,?,?,?,?)";
         PreparedStatement preparedStatement= DBConnection.getInstance().getConnection().prepareStatement(sql);
 
-        preparedStatement.setString(1, item.getItem_code());
+        preparedStatement.setString(1, item.getItemCode());
         preparedStatement.setString(2, item.getName());
         preparedStatement.setString(3, item.getCategory());
         preparedStatement.setString(4, item.getCompany());
         preparedStatement.setInt(5,item.getQty());
-        preparedStatement.setDate(6, (Date) item.getExp_date());
-        preparedStatement.setDouble(7,item.getSelling_unit_price());
+        preparedStatement.setDate(6, (Date) item.getExpiredDate());
+        preparedStatement.setDouble(7,item.getSellingUnitPrice());
 
         return preparedStatement.executeUpdate()>0;
     }
@@ -37,9 +37,9 @@ public class ItemDaoImpl implements ItemDao {
         preparedStatement.setString(2, item.getCategory());
         preparedStatement.setString(3, item.getCompany());
         preparedStatement.setInt(4,item.getQty());
-        preparedStatement.setDate(5, (Date) item.getExp_date());
-        preparedStatement.setDouble(6,item.getSelling_unit_price());
-        preparedStatement.setString(7, item.getItem_code());
+        preparedStatement.setDate(5, (Date) item.getExpiredDate());
+        preparedStatement.setDouble(6,item.getSellingUnitPrice());
+        preparedStatement.setString(7, item.getItemCode());
 
         return preparedStatement.executeUpdate()>0;
     }

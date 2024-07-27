@@ -16,26 +16,26 @@ public class ItemBoImpl implements ItemBo {
     @Override
     public boolean saveItem(ItemDto dto) throws SQLException, ClassNotFoundException {
         return itemDao.saveItem(new Item(
-                dto.getItem_code(),
+                dto.getItemCode(),
                 dto.getName(),
                 dto.getCategory(),
                 dto.getCompany(),
                 dto.getQty(),
-                dto.getExp_date(),
-                dto.getSelling_unit_price()
+                dto.getExpiredDate(),
+                dto.getSellingUnitPrice()
         ));
     }
 
     @Override
     public boolean updateItem(ItemDto dto) throws SQLException, ClassNotFoundException {
         return itemDao.updateItem(new Item(
-                dto.getItem_code(),
+                dto.getItemCode(),
                 dto.getName(),
                 dto.getCategory(),
                 dto.getCompany(),
                 dto.getQty(),
-                dto.getExp_date(),
-                dto.getSelling_unit_price()
+                dto.getExpiredDate(),
+                dto.getSellingUnitPrice()
         ));
     }
 
@@ -51,13 +51,13 @@ public class ItemBoImpl implements ItemBo {
 
         for (Item item:entityList) {
             dtoList.add(new ItemDto(
-                    item.getItem_code(),
+                    item.getItemCode(),
                     item.getName(),
                     item.getCategory(),
                     item.getCompany(),
                     item.getQty(),
-                    item.getExp_date(),
-                    item.getSelling_unit_price()
+                    item.getExpiredDate(),
+                    item.getSellingUnitPrice()
             ));
         }
         return dtoList;
