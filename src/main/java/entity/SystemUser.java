@@ -11,10 +11,10 @@ import java.util.Date;
 @ToString
 @Data
 public class SystemUser {
-    private String user_id;
-    private String user_name;
-    private String password;
-    private String email;
-    private String job_role;
-    private Date last_login_date;
+    private String UserId ;
+    private String UserName ;
+    private String Password ;
+    private String Email ;
+    private String JobRole ;
+    private Date LastLoginDate ;
 }

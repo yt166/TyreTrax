@@ -12,8 +12,8 @@ import java.util.Date;
 @Data
 @ToString
 public class Stock {
-    private String stockId;
-    private String item_Code;
-    private Date date;
-    private double purchase_unit_price;
+    private String StockId ;
+    private String ItemCode ;
+    private Date Date ;
+    private double PurchasePrice ;
 }

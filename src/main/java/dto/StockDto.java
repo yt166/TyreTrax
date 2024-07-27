@@ -11,8 +11,8 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class StockDto {
-    private String stockId;
-    private String item_Code;
-    private Date date;
-    private double purchase_unit_price;
+    private String StockId ;
+    private String ItemCode ;
+    private Date Date ;
+    private double PurchasePrice ;
 }
