@@ -10,9 +10,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(41, 77, 79, 1.0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(41, 77, 79, 1.0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAddCustomerController">
+
    <children>
-      <TextField alignment="CENTER" layoutX="172.0" layoutY="29.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: black; -fx-text-fill: rgba(105, 237, 255, 1.0);" text="Add Customer">
+      <TextField alignment="CENTER" layoutX="176.0" layoutY="27.0" prefHeight="50.0" prefWidth="283.0" style="-fx-background-color: black; -fx-text-fill: rgba(105, 237, 255, 1.0);" text="Admin's Add Customer">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font>
@@ -28,31 +29,41 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXTextField layoutX="26.0" layoutY="110.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="First Name : ">
+      <JFXTextField layoutX="26.0" layoutY="89.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="First Name    : ">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></JFXTextField>
-      <JFXTextField layoutX="26.0" layoutY="163.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Adress        : ">
+      <JFXTextField layoutX="26.0" layoutY="134.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Adress           : ">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></JFXTextField>
-      <JFXTextField layoutX="26.0" layoutY="227.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="E-mail        :">
+      <JFXTextField layoutX="26.0" layoutY="178.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="E-mail            :">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></JFXTextField>
-      <JFXTextField layoutX="343.0" layoutY="110.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Last Name             :">
+      <JFXTextField layoutX="343.0" layoutY="89.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Last Name             :">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></JFXTextField>
-      <JFXTextField layoutX="343.0" layoutY="163.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Contact Number   :">
+      <JFXTextField layoutX="343.0" layoutY="134.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Contact Number   :">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></JFXTextField>
-      <JFXComboBox fx:id="regular" layoutX="343.0" layoutY="227.0" onAction="#regular" prefHeight="29.0" prefWidth="231.0" promptText="                Type" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="regular" layoutX="343.0" layoutY="178.0" onAction="#regular" prefHeight="29.0" prefWidth="231.0" promptText="                Type" style="-fx-background-color: white;" />
       <Button layoutX="343.0" layoutY="270.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="95.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Save">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
+      <JFXTextField layoutX="26.0" layoutY="221.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Credit Limit    :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="343.0" layoutY="221.0" prefHeight="29.0" prefWidth="231.0" style="-fx-background-color: white;" text="Credit Period         :     ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
    </children>
 </AnchorPane>
