@@ -2,7 +2,7 @@ package controller;
 
 import javafx.event.ActionEvent;
 
-public class HomeController {
+public class AdminUpdateCustomerController {
     public void BtnBackOnAction(ActionEvent actionEvent) {
     }
 
